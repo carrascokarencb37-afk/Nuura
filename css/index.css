@@ -1,0 +1,9 @@
+.content {
+    margin: 2%;
+    border-radius: 20px;
+}
+
+.nuura,.principal {
+    background-color: rgb(255, 242, 227);
+    margin: 2% 3%;
+}

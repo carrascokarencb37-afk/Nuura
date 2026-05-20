@@ -1,0 +1,149 @@
+/*Estilo de los botones del menu*/
+.boton {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF2E3;
+    background-color: #707f39;
+    padding: 4px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: 3px solid #96a856;
+}
+
+/*Para que los icon esten peques (creo)*/
+.icon {
+    font-size: 28px;
+    margin-bottom: 2px;
+}
+/*El texto del icon*/
+.text {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*Este es el fondo de todo el menu (y contendor padre, hasta donde recuerdo)*/
+.menu {
+    margin: 1% 3%;
+    background-color: #C2DA6C;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 20px;
+    border: 3px solid #687538;
+}
+
+/*Para que se centraran porque me daba ansiedad*/
+.menu .boton {
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color:#707f39;
+    margin: 7px;
+    font-weight: 800;
+    font-size: 45px;
+}
+
+/*Este es para el menu desplegable (como se pone en moviles, asi todo comprimido y tal)*/
+.top_bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+    position: relative;
+}
+
+/*Es el coso de Nuura que va hasta arriba al centro*/
+.titulo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*El contenedor directo de los botones*/
+.cont_botones {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 20px 3px 20px;
+    background-color: #FFF2E3;
+    margin: 0 10% 1% 10%;
+    border-radius: 20px;
+    border: 3px solid #96a856;
+}
+
+/*El nombre lo dice, mas cosas del menu desplegable*/
+.menu_desp {
+background: none;
+border: none;
+color: #FFF2E3;
+font-size: 28px;
+cursor: pointer;
+}
+
+.top_bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu_desp {
+    margin-left: auto;
+}
+
+/*Responsive para moviles*/
+@media (max-width: 1000px) {
+
+    .menu {
+        position: relative;
+    }
+
+    .cont_botones {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        width: 200px;
+        background-color: #FFF2E3;
+        padding: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .cont_botones.act {
+        display: flex;
+    }
+
+    .boton {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+/*Un poquito de responsive para computadoras*/
+@media (min-width: 1001px) {
+    .menu_desp {
+        display: none;
+    }
+
+    .cont_botones {
+        display: flex;
+        flex-direction: row;
+        overflow-x: visible;
+    }
+}
+/*Para cuando presiones un boton del menu, se cambien de color el texto y el fondo*/
+.boton.activo {
+    background-color: #F1F191 !important;
+    color: #6f7f3d !important;
+}

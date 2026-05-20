@@ -18,4 +18,10 @@ body {
 
 .boton {
     text-decoration: none;
+    transition: 1s;
+    background-color: red;
+}
+.boton:hover {
+    background-color: chartreuse;
+    transition: 1s;
 }

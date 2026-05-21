@@ -63,8 +63,9 @@ body {
     height: 2rem;
     color: #F1F191;
     transition: 1s;
+    background-color: red;
+    height: 3rem;
     cursor: pointer;
-
 }
 .chapito:hover{
     background-color:rgb(148, 189, 241);

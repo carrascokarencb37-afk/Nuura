@@ -1,9 +1,108 @@
-.content {
-    margin: 2%;
-    border-radius: 20px;
-}
-
-.nuura,.principal {
-    background-color: rgb(255, 242, 227);
+.principal {
+    background-color: #f7fce4;
     margin: 2% 3%;
+    border-radius: 20px;
+    padding: 10px;
+    border: 4px solid #707f39;
+    padding: 3%;
+    flex: 1; /* Toma el espacio a la derecha */
+    max-width: 40%;
+    text-align: center; /* Centra el texto y botones dentro de la columna derecha */
+}
+.nuura{
+    background-color: #C2DA6C;
+    border-radius: 20px;
+    padding: 10px;
+    flex: 1;
+}
+h1{
+    font-family:'yahone';
+    color: #707f39;
+    text-align: center;
+    font-size: 40px;
+    
+}
+.textoE{
+    font-family: 'chewy';
+    color: #93a74e;
+    font-size: 40px;
+}
+h3{
+    font-family: 'chewy';
+    color: #707f39;
+    font-size: 40px;
+}
+@font-face {
+    font-family: 'chewy';
+    src: url(../fonts/Chewy/Chewy-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bungee';
+    src: url(../fonts/Bungee/Bungee-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'yahone';
+    src: url(../fonts/Yahone/YanoneKaffeesatz-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.cuadro{
+    background-color: #C2DA6C;
+    margin: 2% 3%;
+    border-radius: 20px;
+    padding: 10px;
+    flex: 1; /* Toma el espacio necesario a la izquierda */
+    max-width: 50%;
+}
+.texto{
+    background-color: #f7fce4;
+    margin: 2% 3%;
+    border-radius: 20px;
+    padding: 10px;
+    border: 4px solid #707f39;
+    
+}
+.boton{
+    border-radius: 20px;
+    background-color: #6f7f39;
+    border: 4px solid #93a74e;
+    font-size: 30px;
+    font-family:cursive;
+    color: #f7f8f1;
+    padding: 1% 2%;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+.botonE{
+    border-radius: 20px;
+    background-color: #6f7f39;
+    border: 4px solid #93a74e;
+    font-size: xx-large;
+    font-family:cursive;
+    color: #f7f8f1;
+    padding: 1% 2%;
+    text-transform: uppercase;
+    font-weight: 1000;
+    text-decoration: none;
+    
+}
+.botonE:hover{
+    background-color: #f1f191;
+    color: #707f39;
+    cursor: pointer;
+}
+.todo{
+    display: flex;
+    justify-content: space-between; /* Esto empuja un bloque a cada extremo */
+    align-items: center;           /* Alinea los centros verticalmente */
+    flex-wrap: wrap;               /* Permite que se acomoden en móviles */
+    padding: 20px;
+    margin: 2% 3%;
+    border-radius: 20px;
+    background-color: #C2DA6C;
+    border: 4px solid #707f39;
 }

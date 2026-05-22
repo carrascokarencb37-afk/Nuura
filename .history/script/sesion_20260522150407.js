@@ -65,13 +65,16 @@ async function registrar() {
             nombre: nombre,
             email: correo
         });
-
-    if (insertError) {
-        console.error('Error al insertar datos del usuario:', insertError.message);
-        alert('Error al guardar los datos del usuario: ' + insertError.message);
-    } else {
-        alert('¡Usuario registrado con éxito! Bienvenido: ' + nombre);
+    
+    
+    else {
+        alert('Usuario registrado con éxito: ' + data.user.email);
         window.location.href = 'index.html';
-        }
     }
+
+    await supabaseClient.from('tbl_usuario').insert(
+        { 
+            id_usuario: data.user.id,
+            nombre: nombre
+        });
 }

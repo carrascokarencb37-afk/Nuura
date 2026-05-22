@@ -1,5 +1,3 @@
-@import url('https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
-
 /*Importar fuente chewy*/
 @font-face {
     font-family: 'chewy';
@@ -55,32 +53,6 @@ body {
 }
 .cont ::placeholder{
     color: rgb(0, 129, 58);
-}
-
-input{
-    color: #004d00;
-     width: 230px;
-    height: 35px;
-
-    border-radius: 20px;
-    border: 2px solid #4c74ff;
-
-    padding-left: 15px;
-
-    color: #145214;
-
-    font-size: 16px;
-
-    outline: none;
-}
-
-
-.ojo{
-    position: absolute;
-    right: 15px;
-    top: 8px;
-    transform: translateY(-50%);
-    cursor: pointer;
 }
 
 /*botones*/

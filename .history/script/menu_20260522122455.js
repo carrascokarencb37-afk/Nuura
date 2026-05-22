@@ -47,5 +47,7 @@ function mostrarContra() {
     }else {
         input.type = 'password';
     }
-    
 }
+    
+    
+

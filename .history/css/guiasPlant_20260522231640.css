@@ -19,20 +19,7 @@ body {
     padding: 20px;
     min-height: 100vh;
 }
-.volver{
-    border-radius: 20px;
-    background-color: #a7d859;
-    color: #021405;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: background-color 0.3s ease;
-}
-.volver:hover {
-    background-color: #8cc14c;
-}
+
 /* Contenedor principal */
 .container {
     max-width: 900px;

@@ -1,0 +1,16 @@
+/*Importar fuente chewy*/
+@font-face {
+    font-family: 'chewy';
+    src: url(../fonts/Chewy-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-image: url(../../img/fondo_medio.jpg);
+    background-size: cover;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+

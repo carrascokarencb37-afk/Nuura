@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nuura - Registrarse</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/Nuura.png" type="png">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+        <script src="../script/menu.js" defer></script>
+        <script src="../script/sesion.js" defer></script>
+</head>
+    <body>
+        <div class="borde">
+            <div class="cont">
+                <h1>Bienvenido</h1>
+                <h2>Registrarse</h2>
+
+                <input type="text" placeholder="nombre" id="nombre">
+                <br><br>
+                <input type="email" id="correo" placeholder="correo electronico">
+                <br><br>
+            <div class="contra">
+                <input type="password" name="contra" id="contra" placeholder="contraseña">
+                <span onclick="mostrarContra()" clas="ojo">
+                    <i
+                        class=
+                        "fi fi-sr-eye">
+                    </i>
+                </span>
+                <br><br>
+            </div>
+            
+                <button onclick="registrar()" class="chapito">Registrarse</button>
+
+                <h3>¿Ya tienes una cuenta?</h3>
+
+                <a href="iniciar_sesion.html"><button class="chapito">Iniciar sesion</button></a>
+
+            </div>
+        </div>
+
+    </body>
+</html>

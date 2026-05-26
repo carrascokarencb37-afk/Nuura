@@ -1,0 +1,161 @@
+/*Importar fuente chewy*/
+@font-face {
+    font-family: 'chewy';
+    src: url(../fonts/Chewy-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-image: url(../img/fondo_medio.jpg);
+    background-size: cover;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7f0 0%, #e8f0e6 100%);
+    color: #2d3e2b;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 32px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(2px);
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #2c5e2a;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Imagen */
+.foto {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 24px;
+    display: block;
+    margin: 0 auto 25px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 3px solid #d4e6c3;
+}
+
+.foto:hover {
+    transform: scale(1.02);
+}
+
+/* Párrafos */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #3a4d36;
+}
+
+/* Subtítulos (h2) */
+h2 {
+    font-size: 1.8rem;
+    color: #3b7a37;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #c8e0b5;
+    display: inline-block;
+}
+
+/* Listas */
+ul {
+    background: #f9fbf6;
+    padding: 20px 20px 20px 45px;
+    border-radius: 20px;
+    margin: 15px 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 12px 0;
+    font-size: 1.05rem;
+    position: relative;
+    padding-left: 28px;
+}
+
+ul li::before {
+    content: "🌿";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.1rem;
+}
+
+/* Colores especiales para la lista de colores */
+ul:first-of-type li:nth-child(1)::before { content: "🌸"; }
+ul:first-of-type li:nth-child(2)::before { content: "❤️"; }
+ul:first-of-type li:nth-child(3)::before { content: "⭐"; }
+ul:first-of-type li:nth-child(4)::before { content: "🤍"; }
+ul:first-of-type li:nth-child(5)::before { content: "🍊"; }
+
+/* Separadores */
+br {
+    display: none;
+}
+
+/* Espaciado entre secciones */
+.container section {
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    p, li {
+        font-size: 1rem;
+    }
+}
+img{
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+

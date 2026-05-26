@@ -1,0 +1,159 @@
+/*Importar fuente chewy*/
+@font-face {
+    font-family: 'chewy';
+    src: url(../fonts/Chewy-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url(../img/fondo_medio.jpg);
+    background-size: cover;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.titulo {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton {
+    text-decoration: none;
+}
+
+/*Aqui empieza el estilo de INICIAR SESION.html*/
+.cont{
+    border-radius: 25px;
+    background-color: #a7d859;
+    padding: 2rem;
+}
+.cont h1{
+    color: rgb(2, 20, 5);
+    font-family:cursive;
+}
+.cont h3{
+    color:rgb(2, 20, 5);
+    font-family:cursive;
+}
+
+.borde{
+    background-color: #F1F191;
+    border-radius:25px;
+    padding: 1rem;
+}
+
+/*registros*/
+.cont input{
+    border-radius:30px;
+    height: 2rem;
+    width: 15rem;
+    border-color: rgb(148, 189, 241);
+}
+.cont ::placeholder{
+    color: rgb(0, 129, 58);
+}
+
+input{
+    color: #004d00;
+     width: 230px;
+    height: 35px;
+
+    border-radius: 20px;
+    border: 2px solid #4c74ff;
+
+    padding-left: 15px;
+
+    color: #145214;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.contra{
+    position: relative;
+    width: 250px;
+}
+.ojo{
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/*botones*/
+.chapito{
+    border-radius: 25px;
+    background-color:rgb(78, 167, 42) ;
+    border-color: chartreuse;
+    height: 2rem;
+    color: #F1F191;
+    transition: 1s;
+    background-color: red;
+    height: 3rem;
+    cursor: pointer;
+}
+.chapito:hover{
+    background-color:rgb(148, 189, 241);
+    color: blue;
+    border-color: blue;
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+
+/* GUIA.html*/
+
+.menu_container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 250px;
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(243, 255, 132, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+h1{
+    color:white;
+    font-family:cursive;
+}
+
+    /*Demas cositas agregadas a las card*/
+/* Imagen */
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+  
+/* Hover mágico ✨ */
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(255, 182, 193, 0.5);
+}
+  
+.card:hover img {
+    transform: scale(1.05);
+}
+  
+/* Texto */
+  .card h3 {
+    margin: 10px 0 5px;
+    color: #41d41c;
+}
+  
+.card p {
+    color: #555;
+    font-size: 14px;
+}

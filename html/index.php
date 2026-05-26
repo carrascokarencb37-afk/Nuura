@@ -1,3 +1,7 @@
+<?php
+include("../php/sesion_config.php");
+?>
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -30,17 +34,20 @@
       </div>
 
       <nav class="principal">
-        <h3 class="textoE">Acceder</h3>
-        <br/>
-        <a class="botonE" href="iniciarsesion.html">Iniciar sesión</a>
-        <br/>
-        <br/>
+        <?php if(isset($_SESSION['usuario_id'])): ?>
 
-        <h3 class="textoE">Crear una cuenta</h3>
-        <br/>
-        <a class="botonE" href="registrarse.html">Registrarse</a>
-        <br/>
-        <br/>
+            <h3 class="textoE"> Bienvenido, <?php echo htmlspecialchars($_SESSION['nombre']); ?> 🌸 </h3>
+            <a class="botonE" href="guia.php">Entrar a la guía</a><br>
+            <a class="botonE" href="../php/cerrarsesion.php">Cerrar sesión</a>
+
+        <?php else: ?>
+
+            <h3 class="textoE">Conoce Nuura</h3>
+            <a class="botonE" href="login.html">Iniciar sesión</a><br>
+            <a class="botonE" href="registro.html">Registrarse</a>
+
+        <?php endif; ?>
+
       </nav>
     </div>
   </body>

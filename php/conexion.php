@@ -1,4 +1,3 @@
-
 <?php
 //Conexión a base de datos
 $servername = "localhost";

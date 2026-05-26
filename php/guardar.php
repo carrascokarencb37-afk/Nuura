@@ -1,5 +1,6 @@
 <?php
 include("conexion.php");
+include("sesion_config.php");
 
 if (!isset($_POST['nombre'], $_POST['correo'], $_POST['contra'])) {
     die("Faltan datos");
@@ -13,15 +14,24 @@ $contra = $_POST['contra'];
 $contraHash = password_hash($contra, PASSWORD_DEFAULT);
 
 $sql = "INSERT INTO tbl_usuarios (nombre, correo, contra)
-VALUES ('$nombre', '$correo', '$contraHash')";
+VALUES (?, ?, ?)";
 
-if ($conn->query($sql) === TRUE) {
-    session_start();
+$_SESSION['usuario_id'] = $conn->insert_id;
+
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("sss", $nombre, $correo, $contraHash);
+
+if ($stmt->execute()) {
+
+    session_regenerate_id(true);
+
     $_SESSION['nombre'] = $nombre;
-    header("Location: ../html/guia.html");
+
+    header("Location: ../html/guia.php");
     exit();
+
 } else {
-    echo "Error: " . $conn->error;
+    echo "Error: " . $stmt->error;
 }
 
 $conn->close();

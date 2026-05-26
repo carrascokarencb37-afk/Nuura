@@ -1,5 +1,6 @@
 <?php
 include("conexion.php");
+include("sesion_config.php");
 
 // Verificar que los datos existan
 if (!isset($_POST['correo'], $_POST['contra'])) {
@@ -19,8 +20,15 @@ if ($resultado->num_rows > 0) {
     $usuario = $resultado->fetch_assoc();
 
     if (password_verify($contra, $usuario['contra'])) {
-        header("Location: ../html/guia.html");
-        exit();
+
+    session_regenerate_id(true);
+
+    $_SESSION['usuario_id'] = $usuario['id'];
+    $_SESSION['nombre'] = $usuario['nombre'];
+    $_SESSION['correo'] = $usuario['correo'];
+
+    header("Location: ../html/guia.php");
+    exit();
     } else {
         echo "Contraseña incorrecta";
     }

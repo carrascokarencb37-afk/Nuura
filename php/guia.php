@@ -1,3 +1,12 @@
+<?php
+include("../php/sesion_config.php");
+
+if (!isset($_SESSION['usuario_id'])) {
+    header("Location: iniciarsesion.html");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>

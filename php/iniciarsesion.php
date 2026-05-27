@@ -23,7 +23,7 @@ if ($resultado->num_rows > 0) {
 
     session_regenerate_id(true);
 
-    $_SESSION['usuario_id'] = $usuario['id'];
+    $_SESSION['usuario_id'] = $usuario['id_usuario'];
     $_SESSION['nombre'] = $usuario['nombre'];
     $_SESSION['correo'] = $usuario['correo'];
 

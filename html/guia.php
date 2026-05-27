@@ -18,10 +18,9 @@ if (!isset($_SESSION['usuario_id'])) {
     <link rel="icon" href="../img/Nuura.png" type="png">
 </head>
 <body class="guia">
+
     <h2> Bienvenido, <?php echo htmlspecialchars($_SESSION['nombre']); ?> 🌸 </h2>
     <h1>Flores 🌸</h1>
-
-    <div class="menu_container">
 
     <div class="menu_container">
 

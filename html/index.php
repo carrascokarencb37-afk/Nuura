@@ -43,8 +43,8 @@ include("../php/sesion_config.php");
         <?php else: ?>
 
             <h3 class="textoE">Conoce Nuura</h3>
-            <a class="botonE" href="login.html">Iniciar sesión</a><br>
-            <a class="botonE" href="registro.html">Registrarse</a>
+            <a class="botonE" href="iniciarsesion.html">Iniciar sesión</a><br>
+            <a class="botonE" href="registrarse.html">Registrarse</a>
 
         <?php endif; ?>
 

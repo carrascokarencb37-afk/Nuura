@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-05-2026 a las 23:46:31
--- Versión del servidor: 10.4.11-MariaDB
--- Versión de PHP: 7.4.2
+-- Tiempo de generación: 28-05-2026 a las 18:49:36
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -32,7 +31,15 @@ CREATE TABLE `tbl_guarda` (
   `id_guardado` int(11) NOT NULL,
   `id_usuario` int(11) NOT NULL,
   `id_guia` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `tbl_guarda`
+--
+
+INSERT INTO `tbl_guarda` (`id_guardado`, `id_usuario`, `id_guia`) VALUES
+(1, 2, 2),
+(2, 2, 3);
 
 -- --------------------------------------------------------
 
@@ -45,7 +52,23 @@ CREATE TABLE `tbl_guias` (
   `nombre_planta` varchar(30) NOT NULL,
   `imagen_planta` char(100) NOT NULL,
   `calendario_riego` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `tbl_guias`
+--
+
+INSERT INTO `tbl_guias` (`id_guia`, `nombre_planta`, `imagen_planta`, `calendario_riego`) VALUES
+(1, 'Corona de Cristo', '../img/plantas/coronita.jpg', '0000-00-00'),
+(2, 'Duranta', '../img/plantas/duranta.jpg', '0000-00-00'),
+(3, 'Rosa del desierto', '../img/plantas/rosaDesierto.jpg', '0000-00-00'),
+(4, 'Pervinca rosa', '../img/plantas/pervinca.jpg', '0000-00-00'),
+(5, 'Capuchina', '../img/plantas/capuchina.jpg', '0000-00-00'),
+(6, 'Ruda', '../img/plantas/ruda.jpg', '0000-00-00'),
+(7, 'Trompillo', '../img/plantas/trompillo.jpg', '0000-00-00'),
+(8, 'Jazmin azul', '../img/plantas/jazmin.jpg', '0000-00-00'),
+(9, 'Flor de Pascua', '../img/plantas/pascua.jpg', '0000-00-00'),
+(10, 'Bigotillo', '../img/plantas/bigotillo.jpg', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -57,15 +80,15 @@ CREATE TABLE `tbl_usuarios` (
   `id_usuario` int(11) NOT NULL,
   `nombre` varchar(20) NOT NULL,
   `correo` varchar(30) NOT NULL,
-  `contra` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `contra` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `tbl_usuarios`
 --
 
 INSERT INTO `tbl_usuarios` (`id_usuario`, `nombre`, `correo`, `contra`) VALUES
-(1, 'Juan Pérez', 'juanin@gmail.com', '$2y$10$2CS');
+(2, 'Juanito Perez', 'juanin@gmail.com', '$2y$10$GTowVBgGXTcVrsPa.hUTdu4wtcJixhg/.B8ps6xXSogPwjmvzQSLi');
 
 --
 -- Índices para tablas volcadas
@@ -99,19 +122,19 @@ ALTER TABLE `tbl_usuarios`
 -- AUTO_INCREMENT de la tabla `tbl_guarda`
 --
 ALTER TABLE `tbl_guarda`
-  MODIFY `id_guardado` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_guardado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `tbl_guias`
 --
 ALTER TABLE `tbl_guias`
-  MODIFY `id_guia` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_guia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `tbl_usuarios`
 --
 ALTER TABLE `tbl_usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas

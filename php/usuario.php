@@ -46,6 +46,11 @@
 
             <h4><?php echo $planta['nombre_planta']; ?></h4>
 
+            <form action="eliminar_fav.php" method="POST">
+                <input type="hidden" name="id_guia" value="<?php echo $fila['id_guia']; ?>">
+                <button type="submit" class="btn-eliminar">Quitar</button>
+            </form>
+
         </a>
 
         <?php } ?>

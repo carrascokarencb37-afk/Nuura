@@ -5,15 +5,18 @@
     font-weight: normal;
     font-style: normal;
 }
+
 body {
-    background-image: url(../img/fondo_medio.jpg);
-    background-size: cover;
+    background: linear-gradient(135deg, #fff870, #f27e99, #9de583, #60b1ef);
     margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    
     justify-content: center;
     text-align: center;
     padding: 2rem;
 
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #2d3e2b;
     line-height: 1.6;
     padding: 20px;
@@ -21,8 +24,8 @@ body {
 }
 .volver{
     border-radius: 20px;
-    background-color: #a7d859;
-    color: #021405;
+    background-color: #f83a63;
+    color: #f6c1c1;;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -32,6 +35,23 @@ body {
 }
 .volver:hover {
     background-color: #8cc14c;
+    color:#2d3e2b
+}
+.favorito{
+    border-radius: 20px;
+    background-color: #f83a63;
+    color: #f6c1c1;
+    
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+.favorito:hover {
+    background-color: #60b1ef;
+    color: #ffe3fa;
 }
 /* Contenedor principal */
 .container {
@@ -47,7 +67,7 @@ body {
 /* Título principal */
 .titulo {
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 3.8rem;
     color: #d70b2d;
     margin-bottom: 25px;
     font-weight: 600;
@@ -160,5 +180,3 @@ img{
     border-radius: 15px;
     margin-bottom: 1rem;
 }
-
-

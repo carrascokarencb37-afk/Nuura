@@ -1,8 +1,8 @@
 <?php
-include("../php/sesion_config.php");
+include("sesion_config.php");
 
 if (!isset($_SESSION['usuario_id'])) {
-    header("Location: iniciarsesion.html");
+    header("Location: ../html/iniciarsesion.html");
     exit();
 }
 ?>
@@ -14,12 +14,12 @@ if (!isset($_SESSION['usuario_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuura - Guía de flores</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../script/menu.js" defer></script>
+    <link rel="stylesheet" href="../css/guia_flor.css">
+    <script src="../js/menu.js" defer></script>
     <link rel="icon" href="../img/Nuura.png" type="png">
 </head>
 <body class="guia">
 
-    <h2> Bienvenido, <?php echo htmlspecialchars($_SESSION['nombre']); ?> 🌸 </h2>
     <h1>Flores 🌸</h1>
 
     <div class="menu_container">
@@ -34,6 +34,11 @@ if (!isset($_SESSION['usuario_id'])) {
                 a la vista con flores tiernas y encantadoras. Con forma de mariposa, la
                 pequeña flor está hecha de dos pétalos, y luego forma un pequeño racimo,
                 verde en verano y rojo en invierno.</p>
+
+            <form action="favoritos.php" method="POST">
+                <input type="hidden" name="id_guia" value="1">
+                <button type="submit">⭐ Guardar</button>
+            </form>
         </div>
 
 
@@ -45,6 +50,11 @@ if (!isset($_SESSION['usuario_id'])) {
         <p>La cultura detrás de la Duranta ( Duranta erecta ) se centra en su papel como
             planta ornamental de protección, símbolo de prosperidad y pilar ecológico nativo 
             de las Américas.</p>
+
+            <form action="favoritos.php" method="POST">
+                <input type="hidden" name="id_guia" value="2">
+                <button type="submit">⭐ Guardar</button>
+            </form>
         </div>
 
         <div class="card">
@@ -54,6 +64,11 @@ if (!isset($_SESSION['usuario_id'])) {
             <h3>Rosa del desierto</h3>
             <p> En la cultura china, se le conoce como fuguihua , que significa "flor de la prosperidad". 
                 Según el Feng Shui, florecer esta planta atrae buena fortuna, riqueza y abundancia al hogar</p>
+
+             <form action="favoritos.php" method="POST">
+                <input type="hidden" name="id_guia" value="3">
+                <button type="submit">⭐ Guardar</button>
+            </form>
         </div>
 
 
@@ -65,6 +80,11 @@ if (!isset($_SESSION['usuario_id'])) {
             <p>La flor de la pervinca (también conocida como vinca) simboliza la fidelidad, el amor eterno y los 
                 recuerdos entrañables . Culturalmente, sus cinco pétalos se asocian con cinco principios de la vida: 
                 amor, riqueza, felicidad, memoria y paz</p>
+
+             <form action="favoritos.php" method="POST">
+                <input type="hidden" name="id_guia" value="4">
+                <button type="submit">⭐ Guardar</button>
+            </form>    
         </div>
 
         <div class="card">
@@ -75,6 +95,11 @@ if (!isset($_SESSION['usuario_id'])) {
             <p>Los antiguos incas valoraban esta flor como planta medicinal (para tratar infecciones respiratorias y 
                 curar heridas) y como alimento. También fue adoptada en culturas mesoamericanas para decorar y honrar 
                 a sus deidades.</p>
+
+             <form action="favoritos.php" method="POST">
+                <input type="hidden" name="id_guia" value="5">
+                <button type="submit">⭐ Guardar</button>
+            </form>    
         </div>
 
         <div class="card">
@@ -85,6 +110,11 @@ if (!isset($_SESSION['usuario_id'])) {
             <p> se centra en el misticismo, la protección espiritual y la medicina tradicional . Originaria del 
                 Mediterráneo, ha sido considerada un símbolo universal de purificación y buena suerte desde civilizaciones 
                 antiguas como Grecia y Roma.</p>
+
+             <form action="favoritos.php" method="POST">
+                <input type="hidden" name="id_guia" value="6">
+                <button type="submit">⭐ Guardar</button>
+            </form>    
         </div>
 
         <div class="card">
@@ -95,6 +125,11 @@ if (!isset($_SESSION['usuario_id'])) {
             <p>En el lenguaje floral tradicional, las flores con forma de trompeta o estrella (como el trompillo) 
                 simbolizan el afecto, la ternura y el cariño . Por su color azul lavanda o morado, se 
                 asocia también con la paz, la calma y el aprecio sincero hacia los seres queridos.</p>
+
+            <form action="favoritos.php" method="POST">
+                <input type="hidden" name="id_guia" value="7">
+                <button type="submit">⭐ Guardar</button>
+            </form>    
         </div>
 
         <div class="card">
@@ -105,6 +140,11 @@ if (!isset($_SESSION['usuario_id'])) {
             <p>Según la leyenda, en la antigüedad, un soldado y una princesa se enamoraron el uno del otro, y el soldado tuvo que irse a 
                 pelear en una guerra. Con la crueldad de la guerra, el soldado nunca regresó. La princesa que perdió su amor decidió suicidarse,
                 y un parche de jazmín azul floreció en el lugar donde murió.</p>
+
+             <form action="favoritos.php" method="POST">
+                <input type="hidden" name="id_guia" value="8">
+                <button type="submit">⭐ Guardar</button>
+            </form>    
         </div>
 
         <div class="card">
@@ -114,6 +154,11 @@ if (!isset($_SESSION['usuario_id'])) {
             <h3>Flor de Pascua</h3>
             <p>los aztecas la llamaban cuetlaxóchitl y simbolizaba la pureza y la nueva vida para los guerreros caídos. Hoy en día, esta planta
                 es un emblema universal de la Navidad, representando esperanza, buena suerte y renovación.</p>
+            
+             <form action="favoritos.php" method="POST">
+                <input type="hidden" name="id_guia" value="9">
+                <button type="submit">⭐ Guardar</button>
+            </form>    
         </div>
 
         <div class="card">
@@ -124,6 +169,12 @@ if (!isset($_SESSION['usuario_id'])) {
             <p>Se cuenta que cuenta que el bigotillo fue originalmente un hada. Al bajar a la Tierra y ver cómo los aldeanos 
                 sufrían y morían sin recursos, comenzó a sanarlos incansablemente. Trabajó con tanta devoción que enfermó y murió, transformándose en 
                 esta flor para seguir beneficiando y alegrando a la gente.</p>
+
+             <form action="favoritos.php" method="POST">
+                <input type="hidden" name="id_guia" value="10">
+                <button type="submit">⭐ Guardar</button>
+            </form>    
+        </div>    
 
     </div>
 </body>

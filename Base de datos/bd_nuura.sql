@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-05-2026 a las 04:38:54
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
+-- Tiempo de generación: 27-05-2026 a las 23:46:31
+-- Versión del servidor: 10.4.11-MariaDB
+-- Versión de PHP: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -31,7 +32,7 @@ CREATE TABLE `tbl_guarda` (
   `id_guardado` int(11) NOT NULL,
   `id_usuario` int(11) NOT NULL,
   `id_guia` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -44,7 +45,7 @@ CREATE TABLE `tbl_guias` (
   `nombre_planta` varchar(30) NOT NULL,
   `imagen_planta` char(100) NOT NULL,
   `calendario_riego` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -56,8 +57,15 @@ CREATE TABLE `tbl_usuarios` (
   `id_usuario` int(11) NOT NULL,
   `nombre` varchar(20) NOT NULL,
   `correo` varchar(30) NOT NULL,
-  `contraseña` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `contra` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `tbl_usuarios`
+--
+
+INSERT INTO `tbl_usuarios` (`id_usuario`, `nombre`, `correo`, `contra`) VALUES
+(1, 'Juan Pérez', 'juanin@gmail.com', '$2y$10$2CS');
 
 --
 -- Índices para tablas volcadas
@@ -103,7 +111,7 @@ ALTER TABLE `tbl_guias`
 -- AUTO_INCREMENT de la tabla `tbl_usuarios`
 --
 ALTER TABLE `tbl_usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Restricciones para tablas volcadas

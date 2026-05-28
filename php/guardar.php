@@ -27,7 +27,7 @@ if ($stmt->execute()) {
 
     $_SESSION['nombre'] = $nombre;
 
-    header("Location: ../html/guia.php");
+    header("Location: guia.php");
     exit();
 
 } else {

@@ -1,5 +1,5 @@
 <?php
-include("../php/sesion_config.php");
+include("php/sesion_config.php");
 ?>
 
 <!doctype html>
@@ -10,18 +10,18 @@ include("../php/sesion_config.php");
 
     <title>Nuura - Principal</title>
 
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="icon" href="../img/Nuura.png" type="png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="img/Nuura.png" type="png" />
 
-    <script src="../script/menu.js" defer></script>
+    <script src="js/menu.js" defer></script>
   </head>
   <body>
     <div class="todo">
       <div class="cuadro">
         <div class="nuura">
           <img
-            src="../img/Nuura_nombre.jpg"
+            src="img/Nuura_nombre.jpg"
             alt="Logo de nombre"
             class="imagen"
           />
@@ -36,15 +36,15 @@ include("../php/sesion_config.php");
       <nav class="principal">
         <?php if(isset($_SESSION['usuario_id'])): ?>
 
-            <h3 class="textoE"> Bienvenido, <?php echo htmlspecialchars($_SESSION['nombre']); ?> 🌸 </h3>
-            <a class="botonE" href="guia.php">Entrar a la guía</a><br>
-            <a class="botonE" href="../php/cerrarsesion.php">Cerrar sesión</a>
+            <h3 class="textoE"> ¡Bienvenido, <?php echo htmlspecialchars($_SESSION['nombre']); ?>!</h3>
+            <a class="botonE" href="php/guia.php">Ir a la guía</a>
+            <a class="botonE" href="php/cerrarsesion.php">Cerrar sesión</a>
 
         <?php else: ?>
 
             <h3 class="textoE">Conoce Nuura</h3>
-            <a class="botonE" href="iniciarsesion.html">Iniciar sesión</a><br>
-            <a class="botonE" href="registrarse.html">Registrarse</a>
+            <a class="botonE" href="html/iniciarsesion.html">Iniciar sesión</a>
+            <a class="botonE" href="html/registrarse.html">Registrarse</a>
 
         <?php endif; ?>
 

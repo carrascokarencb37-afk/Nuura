@@ -1,0 +1,138 @@
+/* ========== GUIA.html ========== */
+body.guia {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #fff870, #f27e99, #9de583, #60b1ef);
+    min-height: 100vh;
+}
+
+.menu_container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las cards en móvil */
+    max-width: 1400px;
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.card {
+    width: 300px;
+    min-height: 500px;
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(243, 255, 132, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Para que no se desborde en hover */
+    overflow: hidden;
+}
+
+.guia h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card img {
+    width: 100%;        /* ← clave: se adapta al ancho de la card */
+    height: auto;       /* ← clave: mantiene proporción */
+    max-height: 250px;  /* límite opcional */
+    object-fit: cover;  /* recorta bonito si es necesario */
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.foto {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+/* Hover mágico ✨ */
+.card:hover {
+    transform: translateY(-10px) scale(1.02); /* scale más pequeño para no romper */
+    box-shadow: 0 12px 25px rgba(255, 182, 193, 0.5);
+}
+
+.card:hover img {
+    transform: scale(1.03);
+}
+
+/* Texto */
+.card h3 {
+    margin: 15px 0 8px;
+    color: #41d41c;
+    font-size: 1.2rem;
+}
+
+.card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.4;
+    /* Limitar altura del texto para que no crezca demasiado */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;  /* muestra solo 4 líneas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Tablets y móviles grandes */
+@media (max-width: 768px) {
+    .guia h1 {
+        font-size: 2.2rem;
+    }
+    
+    .card {
+        width: 260px;  /* cards un poco más pequeñas */
+        min-height: 450px;
+    }
+    
+    .card p {
+        font-size: 12px;
+        -webkit-line-clamp: 3;
+    }
+    
+    .card h3 {
+        font-size: 1rem;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 600px) {
+    body.guia {
+        padding: 10px;
+    }
+    
+    .menu_container {
+        gap: 15px;
+    }
+    
+    .card {
+        width: 100%;        /* ← ocupan todo el ancho */
+        max-width: 320px;   /* pero no más de 320px */
+        min-height: auto;
+        margin: 0 auto;
+    }
+    
+    .guia h1 {
+        font-size: 1.8rem;
+    }
+    
+    .card p {
+        font-size: 12px;
+        -webkit-line-clamp: 3;
+    }
+}
+
+/* Para pantallas muy anchas (escritorio) */
+@media (min-width: 1200px) {
+    .menu_container {
+        justify-content: flex-start; /* alineación a la izquierda en escritorio */
+    }
+}

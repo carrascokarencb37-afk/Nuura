@@ -27,7 +27,7 @@ if ($resultado->num_rows > 0) {
     $_SESSION['nombre'] = $usuario['nombre'];
     $_SESSION['correo'] = $usuario['correo'];
 
-    header("Location: ../html/guia.php");
+    header("Location: guia.php");
     exit();
     } else {
         echo "Contraseña incorrecta";

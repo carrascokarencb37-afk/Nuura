@@ -136,8 +136,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Asegurar que las funciones sean globales
-window.calcularRiego = calcularRiego;
-window.mesAnterior = mesAnterior;
-window.mesSiguiente = mesSiguiente;
-window.fechasRiego = fechasRiego;

@@ -1,19 +1,8 @@
-
-body{
-        background: linear-gradient(135deg, #f27e99, #60b1ef);
-        background-size: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-
-}
-
-
-
-
 /*Estilo de los botones del menu*/
 .boton {
     font-family: Arial, Helvetica, sans-serif;
     color: #FFF2E3;
+    background-color: #3a658d;
     padding: 4px 15px;
     border-radius: 20px;
     margin-bottom: 10px;

@@ -20,13 +20,11 @@
         /* Calendar header styling */
         .calendar-header {
             text-align: center;
-            background-color: #ee6fa2f1;
+            background-color: #ddd06cf1;
             color: white;
             padding: 10px;
             font-size: 1.2em;
             font-weight: bold;
-
-            border-radius: 10px 10px 0 0;
         }
 
         /* Days of the week styling */

@@ -10,7 +10,7 @@
 
 
 body {
-    background-image: linear-gradient(to top, #f3eeb6, #d4db74, #9abf17, #84bf93, #83d2d3);
+    background-image: linear-gradient(to top, #f3eeb6, #d4db74, #9abf17, #84bf93);
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
@@ -37,8 +37,7 @@ body {
     border-radius: 25px;
     background-color: #a7d859;
     padding: 2rem;
-    min-width: 70%;
-
+    min-width: 90%;
 }
 .cont h1{
     color: rgb(2, 20, 5);
@@ -100,7 +99,7 @@ input{
     height: 2rem;
     color: #F1F191;
     transition: 1s;
-    background-color: rgb(16, 107, 17);
+    background-color: red;
     height: 3rem;
     cursor: pointer;
 }
@@ -110,49 +109,6 @@ input{
     border-color: blue;
     transition: 1s;
     transform: scale(1.05);
-}
-/* PC y tablets grandes (más de 768px) */
-@media (min-width: 769px) {
-    .borde {
-        max-width: 700px; /* Más ancho en PC */
-        padding: 1.5rem;
-    }
-
-    .cont {
-        max-width: 600px; /* Más ancho en PC */
-        padding: 2.5rem;
-    }
-
-    .cont input {
-        max-width: 380px; /* Inputs más anchos en PC */
-        height: 3rem;
-    }
-
-    input {
-        max-width: 380px;
-        min-height: 50px;
-        font-size: 17px;
-    }
-
-    .contra {
-        max-width: 380px;
-    }
-
-    .chapito {
-        min-height: 52px;
-        padding: 0 2.5rem;
-        font-size: 1.1rem;
-        width: auto;
-        min-width: 180px;
-    }
-
-    .cont h1 {
-        font-size: 2.2rem;
-    }
-
-    .cont h2 {
-        font-size: 1.8rem;
-    }
 }
 
 /* Móviles medianos (480px - 768px) */

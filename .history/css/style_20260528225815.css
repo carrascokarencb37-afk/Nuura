@@ -10,7 +10,7 @@
 
 
 body {
-    background-image: linear-gradient(to top, #f3eeb6, #d4db74, #9abf17, #84bf93, #83d2d3);
+    background-image: linear-gradient(to top, #f3eeb6, #d4db74, #9abf17, #84bf93);
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;

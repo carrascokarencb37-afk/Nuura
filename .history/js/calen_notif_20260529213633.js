@@ -30,26 +30,26 @@ function revisarRiegoHoy() {
     });
     
     if (esHoy) {
-    const plantaSelect = document.getElementById("flor");
+const plantaSelect = document.getElementById("flor");
 
-        const planta =
-            plantaSelect.options[
-                plantaSelect.selectedIndex
-            ].text;
+    const planta =
+        plantaSelect.options[
+            plantaSelect.selectedIndex
+        ].text;
 
-        mostrarNotificacion(planta);
+    mostrarNotificacion(planta);
 
-        const recordatorio =
-            document.getElementById("recordatorio");
+    const recordatorio =
+        document.getElementById("recordatorio");
 
-        recordatorio.innerHTML =
-            `💧 Hoy debes regar ${planta}`;
+    recordatorio.innerHTML =
+        `💧 Hoy debes regar ${planta}`;
 
-        recordatorio.classList.add(
-            "recordatorio-activo"
-        );
+    recordatorio.classList.add(
+        "recordatorio-activo"
+    );
 
-        return true;
+    return true;
 }
 
 // Función para programar verificaciones periódicas

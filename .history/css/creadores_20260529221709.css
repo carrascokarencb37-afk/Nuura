@@ -1,0 +1,107 @@
+.contprincipal{
+    display: flex;
+    justify-content: space-between; /* Separa el texto de las fotos */
+    align-items: center; 
+    gap: 20px;
+    background-color: #93a74e;
+    border: 4px solid #65752f;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;       /* Permite que los elementos bajen si no caben */
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+
+}
+.creadores{
+    background-color: #93a74e;
+    border-radius: 20px;
+    justify-content: center;
+    font-size: 45px;
+    color: #f4f4b5;
+    border: 4px solid #65752f;
+}
+.columna-imagenes {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;              /* Espacio entre cada imagen */
+}
+
+.columna-imagenes img {
+    width: 300px;          
+    height: 100px;          
+    object-fit: cover;      /* Evita que se deformen */
+    border-radius: 15px;   
+    border: 2px solid #6f7f39; 
+}
+.botoncrea{
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #f1f191;
+    border: 4px solid #6f7f39;
+    font-size: 30px;
+    font-family:cursive;
+    color: #65752f;
+    padding: 1% 2%;
+    text-transform: uppercase;
+    font-weight: 1000;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+
+}
+.listacreadores{
+  
+    color: #d9e7a5;
+    
+}
+.bloque-izquierdo{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 20px;              /* Espacio entre el último nombre y el botón */
+    flex-grow: 1;
+}
+@media (max-width: 768px) {
+   
+
+    .contprincipal {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        padding: 15px;
+        width: 95%;            /* Aprovecha más el espacio lateral */
+        gap: 15px;
+    }
+
+    .bloque-izquierdo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .creadores {
+        font-size: 32px;       /* Título un poco más pequeño para celular */
+        width: 100%;
+    }
+
+    .listacreadores {
+        font-size: 24px;       /* Nombres más ajustados */
+    }
+
+    .columna-imagenes {
+        width: 100%;
+        flex-direction: row;    /* Ponemos las fotos una al lado de otra */
+        flex-wrap: wrap;        /* Si no caben, que bajen */
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .columna-imagenes img {
+        width: 45%;            /* Dos fotos por fila */
+        height: 80px;          /* Un poco más bajas para no alargar mucho la pantalla */
+    }
+
+    .botoncrea {
+        font-size: 20px;
+        width: 80%;
+        margin: 10px auto;
+    }
+}

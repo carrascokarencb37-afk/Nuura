@@ -6,7 +6,7 @@
     background-color: #f7fce4;
     margin: 2% 3%;
     border-radius: 20px;
-    border: 4px solid #F696CA;
+    border: 4px solid #707f39;
     padding: 30px;
     flex: 1;
     max-width: 40%;
@@ -14,7 +14,7 @@
 }
 
 .nuura{
-    background-color: #BDD3EB;
+    background-color: #C2DA6C;
     border-radius: 20px;
     padding: 10px;
     flex: 1;
@@ -28,7 +28,7 @@ h1{
 }
 .textoE{
     font-family: 'chewy';
-    color: #F696CA;
+    color: #93a74e;
     font-size: 40px;
 }
 h3{
@@ -55,7 +55,7 @@ h3{
     font-style: normal;
 }
 .cuadro{
-    background-color: #BDD3EB;
+    background-color: #C2DA6C;
     margin: 2% 3%;
     border-radius: 20px;
     padding: 10px;
@@ -67,8 +67,8 @@ h3{
     margin: 2% 3%;
     border-radius: 20px;
     padding: 10px;
-    border: 4px solid #F696CA;
-    color: #205492;
+    border: 4px solid #707f39;
+    color: #6f7f39;
     
 }
 .boton{
@@ -86,9 +86,9 @@ h3{
 .botonE{
     display: inline-block;
     margin: 12px 0;
-    border-radius: 30px;
-    background-color: #F696CA;
-    border: 4px solid #F1F191;
+    border-radius: 20px;
+    background-color: #6f7f39;
+    border: 4px solid #93a74e;
     font-size: xx-large;
     font-family: cursive;
     color: #f7f8f1;
@@ -100,9 +100,8 @@ h3{
     
 .botonE:hover{
     background-color: #f1f191;
-    color: #205492;
+    color: #707f39;
     cursor: pointer;
-    border: 4px sol #89C7FF;
 }
 .todo{
     display: flex;
@@ -112,8 +111,8 @@ h3{
     padding: 20px;
     margin: 2% 3%;
     border-radius: 20px;
-    background-color: #BDD3EB;
-    border: 4px solid #F1F191;
+    background-color: #C2DA6C;
+    border: 4px solid #707f39;
 }
 
 .imagen {
@@ -266,15 +265,10 @@ h3{
 /*Esto es mio (julissa)*/
 
 body{
-    background-image: linear-gradient(45deg, #FF92C6, #89C7FF);
+    background-image: linear-gradient(135deg, #f3eeb6, #d4db74, #9abf17, #84bf93);
     min-height: 100vh;
     margin: 0;
     justify-content: center;
-    height: 100vh; /* Forzamos a que mida exactamente el alto de la pantalla */
-    display: flex; /* Ayuda a centrar el contenido */
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
 }
 
 .imagen {

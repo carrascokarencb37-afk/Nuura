@@ -21,7 +21,7 @@ include("php/sesion_config.php");
       <div class="cuadro">
         <div class="nuura">
           <img
-            src="img/logo_azul.png"
+            src="img/Nuura_nombre.jpg"
             alt="Logo de nombre"
             class="imagen"
           />

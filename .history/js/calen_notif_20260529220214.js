@@ -35,7 +35,7 @@ function mostrarNotificacion(planta) {
         return fechaRiego.getTime() === hoy.getTime();
     });
     
-    if (esHoy) {
+    if (true) {
     const plantaSelect = document.getElementById("flor");
 
         const planta =

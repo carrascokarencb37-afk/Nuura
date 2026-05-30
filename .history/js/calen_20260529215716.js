@@ -48,9 +48,7 @@ function calcularRiego() {
     actualizarCalendarioRiegos();
 
     //prueba de notificacion:
-    document.getElementById("recordatorio").innerHTML = "Recordatori de prueba";
-
-    document.getElementById("recordatorio").classList.add("recordatorio-activo");
+    alert("Prueba de recordatorio de riego");
 }
 
 // Variables globales para el calendario

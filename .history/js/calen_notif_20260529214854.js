@@ -13,10 +13,8 @@ function mostrarNotificacion(planta) {
     }
 }
 
+console.log("Entré a revisarRiegoHoy");
     function revisarRiegoHoy() {
-
-        console.log("Entré a revisarRiegoHoy");
-
     // Si no hay fechas de riego, no hacer nada
     if (typeof fechasRiego === 'undefined' || fechasRiego.length === 0) {
         console.log("No hay fechas de riego calculadas aún");
@@ -26,9 +24,6 @@ function mostrarNotificacion(planta) {
     const hoy = new Date();
     hoy.setHours(0, 0, 0, 0); // Normalizar hora para comparación
     
-
-    console.log("Fechas guardadas:", fechasRiego);
-    console.log("Hoy es:", hoy);
     const esHoy = fechasRiego.some(fecha => {
         const fechaRiego = new Date(fecha);
         fechaRiego.setHours(0, 0, 0, 0);
